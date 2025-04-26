@@ -1,6 +1,12 @@
+import { ThemeSwitcher } from "@/components/theme-switcher";
+
 export default function ChoiceDetails() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-6">
+      <div className="absolute top-4 right-4">
+        <ThemeSwitcher />
+      </div>
+      
       <div className="w-full max-w-md">
         <div className="bg-muted p-4 mb-6 rounded-md">
           <h1 className="text-xl">〇〇について</h1>

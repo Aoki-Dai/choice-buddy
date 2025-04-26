@@ -1,8 +1,13 @@
 import Link from "next/link";
+import { ThemeSwitcher } from "@/components/theme-switcher";
 
 export default function Choices() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
+      <div className="absolute top-4 right-4">
+        <ThemeSwitcher />
+      </div>
+      
       <h1 className="text-2xl font-bold mb-8">何に困っている？</h1>
       <div className="flex flex-col gap-4">
         <Link href="/choices/details" className="w-full">
